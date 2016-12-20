@@ -1,9 +1,9 @@
-git-rev-sync
+local-git-sync
 ============
 
 [![Build Status](https://travis-ci.org/kurttheviking/git-rev-sync.svg?branch=master)](https://travis-ci.org/kurttheviking/git-rev-sync.svg?branch=master)
 
-Synchronously get the current git commit hash, tag, count, branch or commit message. Forked from [git-rev](https://github.com/tblobaum/git-rev).
+Synchronously get the current git commit hash, tag, count, branch, log or commit message. Forked from [git-rev-sync](https://github.com/kurttheviking/git-rev-sync).
 
 
 ## Example
@@ -19,6 +19,14 @@ console.log(git.long());
 
 console.log(git.branch());
 // master
+
+console.log(git.log());
+// commit 393b24d4ae3d944eb6af2008246e4e22c37e0f2d
+// Author: syberpunk <syberpunk@email.com>
+// Date:   Mon Dec 19 17:02:46 2016 +0200
+//
+//  //GIT LOG TEST
+
 ```
 
 You can also run these examples via: `npm run examples`
@@ -26,13 +34,13 @@ You can also run these examples via: `npm run examples`
 
 ## Install
 
-`npm install git-rev-sync --save`
+`npm install local-git-sync --save`
 
 
 ## API
 
 ``` js
-var git = require('git-rev-sync');
+var git = require('local-git-sync');
 ```
 
 #### `git.short([filePath])` &rarr; &lt;String&gt;
@@ -63,10 +71,14 @@ return the current commit message; this method will fail if the `git` command is
 
 return the count of commits across all branches; this method will fail if the `git` command is not found in your `PATH`
 
+#### `git.log()` &rarr; &lt;String&gt;
+
+return a list of all commits; this method will fail if the `git` command is not found in your `PATH`
+
 
 ## License
 
-[MIT](https://github.com/kurttheviking/git-rev-sync/blob/master/LICENSE)
+[MIT](https://github.com/kurttheviking/local-git-sync/blob/master/LICENSE)
 
 
 ## Donations
