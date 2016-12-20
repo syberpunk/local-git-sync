@@ -1,5 +1,5 @@
 {
-  "name": "git-rev-sync",
+  "name": "local-rev-sync",
   "version": "1.8.0",
   "author": "kurttheviking",
   "bugs": {
@@ -10,6 +10,10 @@
       "name": "Kurt Ericson",
       "email": "github@kurttheviking.com",
       "url": "https://github.com/kurttheviking"
+    },{
+      "name": "syberpunk",
+      "email": "github@syberpunk.com",
+      "url": "https://github.com/syberpunk"
     },
     {
       "name": "Jason Denizac",
@@ -47,7 +51,7 @@
       "url": "https://github.com/orbweaver-"
     }
   ],
-  "description": "Synchronously get the current git commit hash, tag, or branch",
+  "description": "Synchronously get the current git commit hash, tag, log, latest commit or branch",
   "homepage": "https://github.com/kurttheviking/git-rev-sync",
   "license": "MIT",
   "main": "index.js",
