@@ -137,7 +137,7 @@ function count() {
 }
 
 function log() {
-  throw new Error('not implemented');
+  return _command('git', ['log']);
 }
 
 module.exports = {
