@@ -10,6 +10,7 @@ console.log('git.message() => ' + git.message());
 console.log('git.tag() => ' + git.tag());
 console.log('git.tag(true) => ' + git.tag(true));
 console.log('git.count() => ' + git.count());
+console.log('git.log() => ' + git.log());
 
 if (otherDir) {
   console.log('git.short(' + otherDir + ') => ' + git.short(otherDir));
