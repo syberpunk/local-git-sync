@@ -78,13 +78,6 @@ return a list of all commits; this method will fail if the `git` command is not 
 
 ## License
 
-[MIT](https://github.com/kurttheviking/local-git-sync/blob/master/LICENSE)
+[MIT](https://github.com/kurttheviking/git-rev-sync/blob/master/LICENSE)
 
-
-## Donations
-
-We're all in this together
-
-- https://www.coinbase.com/kurttheviking
-- https://www.paypal.me/kurttheviking
 
