@@ -19,7 +19,7 @@ console.log('git.log() => ' + git.log());
 //
 //  //GIT LOG TEST
 
-console.log('git.log() => ' + git.log());
+console.log('git.latestCommit() => ' + git.latestCommit());
 // e.g. 
 // {
 //   id: 393b24d4ae3d944eb6af2008246e4e22c37e0f2d,
