@@ -52,7 +52,7 @@
     }
   ],
   "description": "Synchronously get the current git commit hash, tag, log, latest commit or branch",
-  "homepage": "https://github.com/kurttheviking/git-rev-sync",
+  "homepage": "https://github.com/syberpunk/local-git-sync",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
@@ -62,7 +62,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:kurttheviking/git-rev-sync.git"
+    "url": "git@github.com:syberpunk/local-git-sync.git"
   },
   "dependencies": {
     "graceful-fs": "4.1.6",
