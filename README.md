@@ -27,7 +27,7 @@ console.log(git.log());
 //
 //  //GIT LOG TEST
 
-console.log('git.latestCommit() => ' + git.latestCommit());
+console.log(git.latestCommit());
 // e.g. 
 // {
 //   id: 393b24d4ae3d944eb6af2008246e4e22c37e0f2d,
@@ -85,7 +85,7 @@ return the count of commits across all branches; this method will fail if the `g
 
 return a list of all commits; this method will fail if the `git` command is not found in your `PATH`
 
-#### `git.latestCommit()` &rarr; &lt;String&gt;
+#### `git.latestCommit()` &rarr; &lt;Object&gt;
 
 return the last commit as a javascript object; this method will fail if the `git` command is not found in your `PATH`
 
