@@ -9,7 +9,7 @@ Synchronously get the current git commit hash, tag, count, branch, log or commit
 ## Example
 
 ```js
-var git = require('git-rev-sync');
+var git = require('local-git-sync');
 
 console.log(git.short());
 // 75bf4ee
