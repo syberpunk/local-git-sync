@@ -140,6 +140,21 @@ function log() {
   return _command('git', ['log']);
 }
 
+function lastestCommit() {
+  var commit = _command('git', ['show', '--summary']);
+  var lines = commit.split(/\r?\n/).map(function(line){
+    return line.split(/ (.+)/)[1];
+  });
+  
+  return {
+    id: lines[0],
+    revision: count(),
+    date: new Date(lines[2]),
+    author: lines[1],
+    message: lines[4].trim()
+  }
+}
+ 
 module.exports = {
   branch : branch,
   count: count,
@@ -148,5 +163,6 @@ module.exports = {
   message : message,
   short : short,
   tag : tag,
-  isTagDirty: isTagDirty
+  isTagDirty: isTagDirty,
+  lastestCommit: lastestCommit
 };
