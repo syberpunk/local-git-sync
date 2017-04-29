@@ -151,7 +151,7 @@ function lastestCommit() {
     revision: count(),
     date: new Date(lines[2]),
     author: lines[1],
-    message: lines[4].trim()
+    message: lines[4] ? lines[4].trim() : null
   }
 }
  
